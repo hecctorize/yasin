@@ -1,0 +1,148 @@
+﻿body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #345;
+    background-image: url("./assets/weather/bos.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.App {
+    width: 100%;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.merkez {
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.header-box {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    
+}
+
+
+input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+
+.bugun-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #cacecd;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    border-left: 6px solid #886971;
+}
+
+
+.bugun-hava {
+    flex: 1;
+    text-align: center;
+}
+
+
+.bugun-muzik {
+    flex: 1;
+    text-align: center;
+}
+
+.muzik-adi {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 5px;
+}
+
+
+.ayirici {
+    width: 2px;
+    align-self: stretch;
+    background: rgba(0, 0, 0, 0.25);
+}
+
+
+.cards {
+    gap: 15px;
+    margin-top: 20px; 
+    width: 100%;
+}
+
+.card {
+    padding: 15px;
+    border-radius: 12px;
+    background: #b2b0a8;
+    text-align: center;
+}
+
+
+.weather-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+
+    .weather-line img {
+        width: 32px;
+        height: 32px;
+    }
+
+
+
+.card,
+.bugun-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+    .card:hover,
+    .bugun-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+.loading {
+    margin-top: 15px;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.error {
+    color: darkred;
+    font-weight: bold;
+}
+
+.forecast-title {
+    text-align: center;
+    margin: 30px 0 15px;
+    background:  #cacecd ;
+    padding: 5px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
